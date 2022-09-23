@@ -1,0 +1,47 @@
+<html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- Napisati funkciju koja menja stil paragrafa sledećeg HTML dokumenta.
+    - stil elementa izmeniti na proizvoljan način (npr. promeniti pozadinu,
+    izmeniti boju/ veličinu teksta... )
+    - stil izmeniti koristeći JavaScript (sintaksa: element.style.property =
+    value) i jQuery (sintaksa: jQueryElement.css(‘property’, value) )
+    - funckija se poziva kada se klikne na dugme Promeni stil. -->
+
+<head>
+    <title>JS DOM paragraph style</title>
+</head>
+<script>
+    var textField;
+    function getter(){
+             textField=document.getElementById("text");
+        }
+    function promeniStil() {
+                textField.style.color = "red";
+            }
+</script>
+<body onload="getter()">
+    <script>
+        $(document).ready(function () {
+
+            
+            $("button").click(function () {
+                $("#text").css("color", "red");
+            });
+
+            
+
+
+        })
+    </script>
+    <p id='text' name='textName'>JS DOM paragraph style</p>
+    <div>
+        <button >Promeni stil</button>
+    </div>
+    <script>
+       
+        
+    </script>
+</body>
+
+</html>
