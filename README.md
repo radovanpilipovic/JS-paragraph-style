@@ -1,0 +1,2 @@
+# JS-paragraph-style
+Napisati funkciju koja menja stil paragrafa sledećeg HTML dokumenta.     - stil elementa izmeniti na proizvoljan način (npr. promeniti pozadinu,     izmeniti boju/ veličinu teksta... )     - stil izmeniti koristeći JavaScript (sintaksa: element.style.property =     value) i jQuery (sintaksa: jQueryElement.css(‘property’, value) )     - funckija se poziva kada se klikne na dugme Promeni stil.
